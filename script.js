@@ -20,9 +20,7 @@ function handleNoClick() {
     messageIndex = (messageIndex + 1) % messages.length;
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
-    setTimeout(() => {
-        yesButton.style.fontSize = `${currentSize}px`;
-    }, 1000);
+    
 }
 
 function handleYesClick() {
